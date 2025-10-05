@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Project - ₹20</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 16px;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 90%;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      background: linear-gradient(90deg, #0078ff, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    select, input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    select:focus, input:focus {
+      border-color: #0078ff;
+      box-shadow: 0 0 8px rgba(0, 120, 255, 0.3);
+      outline: none;
+    }
+
+    select {
+      appearance: none;
+      background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%23666" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 16px 16px;
+      background-color: #fff;
+    }
+
+    button {
+      background: linear-gradient(90deg, #28a745, #45c66f);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #218838, #3fbf61);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(40, 200, 100, 0.3);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 8px 20px rgba(0, 120, 255, 0.2);
+    }
+
+    p {
+      font-size: 14px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 500px) {
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Buy Any Project - ₹20 Only</h2>
+
+    <select name="project" required>
+      <option value="">-- Select Project --</option>
+      <option value="chatbot">Lead Management System</option>
+      <option value="ecommerce">E-Commerce App</option>
+      <option value="dashboard">Healthcare management system</option>
+      <option value="chatbot">Job Fraud Detection</option>
+      <option value="ecommerce">React Drag and Drop tool</option>
+      <option value="dashboard">hr management system</option>
+      <option value="chatbot">Property Lisiting</option>
+      <option value="ecommerce">Movie recommendation System</option>
+      <option value="dashboard">Ai ChatBot</option>
+    </select>
+
+    <p>Scan the QR code below to pay ₹20:</p>
+
+    <!-- Replace this image with your actual QR code -->
+    <img src="WhatsApp Image 2025-10-04 at 17.24.57_ea5e2494.jpg" alt="Scan to Pay ₹20">
+
+    <p>After payment, fill in your details:</p>
+
+    <form action="https://formspree.io/f/xyznpgao" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="upi" placeholder="Transaction ID or UPI ID" required>
+      <button type="submit">Submit Details</button>
+    </form>
+
+    <p>You'll get your project link within 24 hours after verification.</p>
+  </div>
+
+</body>
+</html>
